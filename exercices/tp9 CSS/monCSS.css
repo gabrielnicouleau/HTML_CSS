@@ -1,0 +1,14 @@
+div{width: 200px; height: 200px; position: relative; border: black solid 2px; margin: 20px;}
+/*mise en page des div en hauteur et largeur de 200 pixels avec une bordure noir de 2 pixels et un espacement de 20 pixels*/
+div:nth-child(2) {background-image: linear-gradient(110deg, purple 75%, yellow);}
+/*changement du fond de la deuxième div en dégradé violet sur jaune en 75% avec un angle de départ de -70°*/
+div:first-of-type {background-image: linear-gradient(to bottom left, red, green, blue);}
+/*changement du fond de la première div en dégradé rouge vers et bleu en partant d'en haut à droite*/
+p {width: 200px; height: 200px; position: relative; border: black solid 2px; margin: 20px; background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), white);}
+/*mise en page du paragraphe comme les div et changement du fond en dégradé noir sur blanc vers le haut avec une oppacité de 50%*/
+.troisieme {background-image: radial-gradient(circle at center, rgb(156, 214, 241), rgb(255, 214, 255));}
+/*changement du fond de la troisieme div en dégradé radial de centre bleu sur rose*/
+div:last-of-type {background-image: repeating-radial-gradient(black, white 10px);}
+/*changement du fond de la dernière div en répétition de dégradé radial noir sur blanc sur 10 pixels*/
+#derniere:hover {background-image: repeating-radial-gradient(white, black 10px);}
+/*mise en dynamisme de la dernier div en inversant les couleurs au passage de la souris*/

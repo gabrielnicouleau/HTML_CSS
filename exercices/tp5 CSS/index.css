@@ -1,0 +1,30 @@
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 50px;
+}/*mise en rouge, au centre et plus gros du titre h1*/
+h3 {
+    color: blue;
+    font-size: 25px;
+}/*mise en bleu et plus gros des titres h3 (mais mois que le titre h1)*/
+p {
+    background-color: grey;
+}/*mise en gris du fond de tous les paragraphes*/
+strong {
+    font-weight: lighter;
+    color: yellowgreen;
+}/*annulation du texte en gras et passage en jaune-vert*/
+em {
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 20px;
+    color: orange;
+}/*annulation du texte en italic, soulignement, modification de sa taille et passage en orange*/
+.troisieme {
+    background-color: pink;
+}/*changement de couleur en rose pour le font du troisieme paragraphe (en class "troisieme")*/ /*privilégier les id aux class quand les éléments à modifier sont seuls*/
+.titre2 {
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+}/*changement de couleur en vert du titre du 2eme article (en class "titre2"), alignement à droite et soulignement*/ /*privilégier les id aux class quand les éléments à modifier sont seuls*/

@@ -1,0 +1,9 @@
+li:nth-child(odd) {
+    color: blue;
+}/*change la couleur en bleu des éléments impaires*/
+ul:hover li:nth-child(odd) {
+    color:black;
+}/*au passage de la souris sur les éléments de la liste, changer les éléments impaires en noir*/
+ul:hover li:nth-child(even) {
+    color:blue
+}/* au passage de la souris sur les éléments de la liste, changer les éléments paires en bleu*/

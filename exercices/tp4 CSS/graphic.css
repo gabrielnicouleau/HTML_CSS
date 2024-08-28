@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+a[href="https://www.vetocanis.com/blogs/infos/top-10-des-races-de-chats-les-plus-gros-du-monde?srsltid=AfmBOooteku2V9rwlxP0Y-chg2NUdlg2LbwbLeva_bJ58niGyj8A8fc5"] {
+    color: yellowgreen;
+}
+div[id="contenu"] {
+    background-color: lightgray;
+}
+#contenu2 {
+    text-align: right;
+    
+}
+.text2 {
+    font-size: 2em;
+}

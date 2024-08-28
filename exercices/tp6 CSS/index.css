@@ -1,0 +1,18 @@
+h1 {
+    color: blue;
+}/*changement du titre en bleu*/
+h1:hover {
+    color: green;
+}/*changement du titre en vert au passage de la souris*/
+p:active {
+    background-color: grey;
+}/*changement du fond du paragraphe lors du maintien du click de la souris*/
+a:visited {
+    color: lightgray;
+}/*changement de la couleur du lien déja visité en gris clair*/
+a:link {
+    color: orange
+}/*changement du lien non visité en orange*/ /*peut mettre seulement "a" car "a:visited" au dessus change la valeur dès que le lien est visité*/
+img:hover{
+    display: contents;
+}/*disparition de l'image au passage de la souris*/ /* opacity: O%; si display ne marche pas*/

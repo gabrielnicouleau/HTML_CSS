@@ -1,0 +1,4 @@
+body {background-color: blueviolet;}
+/*fond du body en violet*/
+div {background-color: rgb(0, 119, 255); box-shadow: -5px -5px 15px white, 5px 5px 15px black; width: 100px;}
+/*fond de la div en bleu et ajout de deux ombres: blanche et noire*/

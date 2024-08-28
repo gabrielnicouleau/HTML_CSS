@@ -1,0 +1,19 @@
+table {border: double purple 6px; border-collapse: collapse;}
+/*bordure du tableau en violet 6pixels et fusionnement des bordures de celuis-ci*/
+caption {color: blueviolet;font-weight: bold;}
+/*changement de la couleur de la légende du tableau en violet et mise en gras de celle-ci*/
+th {background-color: rgba(58, 103, 253, 0.712); border: solid black 2px;}
+/*couleur de fond des headers des colones en bleu et création de bordures noirs en 2 pixels*/
+td {border: solid black 2px;text-align: center;}
+/*création de bordures noir de 2 pixels pour les cellules du tableau et alignement du texte au centre*/
+
+/*deuxieme exo*/
+
+.deuxieme {border: black 10px;}
+/*changement des bordures du deuxième tableau en noir 10pixels*/
+.categories {background-color: green;}
+/*changement du fond de la deuxieme légende en vert (supperposée à la première couleur*/
+.first, .second, .third, .fourth, .fifth {background-color: rgb(171, 120, 219);}
+/*changement du fond des couleurs des lignes du tableau en violet clair*/
+.hayao, .isao {background-color: rgb(231, 101, 101);}
+/*changement du fond de la première colone en rouge clair*/
