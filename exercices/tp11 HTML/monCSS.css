@@ -1,0 +1,4 @@
+input:not(.a){
+    position: absolute;
+    left: 170px;
+}

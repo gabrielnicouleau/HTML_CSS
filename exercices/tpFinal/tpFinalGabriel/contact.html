@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tpFinalGabrielContact</title>
+    <link rel="stylesheet" href="./monCSS.css">
+</head>
+<header>
+    <div id="bannière"><img src="./baniereLoremPicsum.jpg" alt="bannière" width="1000px" height="200px"></div>
+    <h1>Bienvenue sur mon site!</h1>
+    <nav>
+        <ul>
+            <li><a href="">Acceuil</a></li><br/>
+            <li><a href="#article2">Blog</a></li><br/>
+            <li><a href="">Gallerie</a></li><br/>
+            <li><a href="./contact.html">Contact</a></li><br/>
+        </ul>
+    </nav>
+</header>
+<section>
+    <form method="POST" action="monProgramme.php">
+        <fieldset>
+            <legend>Contact</legend>
+            <div>
+                <label for="Nom">Nom:*</label>
+                <input type="text" required name="Nom" placeholder="Ex: Robert" minlength="2" maxlength="20"/><br/>
+                <label for="email">Mail:*</label>
+                <input type="email" name="email" required placeholder="Ex: monMail@FAI.com"/><br/>
+                <label for="commentaire">Commentaire</label><br/>
+                <textarea name="commentaire" id="commentaire" cols="70" rows="10" placeholder="Je dépose mon avis :)"></textarea><br/>
+                <input type="checkbox" id="checkbox" checked/><label for="checkbox">Envoyer une copie par E-mail</label><br/>
+                <input type="submit" value="Envoyer"/>
+                <input type="reset" value="Reset"/>
+            </div>
+        </fieldset>
+    </form>
+</section>
+<footer>
+    <ul>
+        <li><a href="http//www.fauxlien.com">menu 1</a></li>
+        <li><a href="http//www.fauxlien2.com">menu 2</a></li>
+        <li><a href="http//www.fauxlien3.com">menu 3</a></li>
+        <li><a href="http//www.fauxlien4.com">menu 4</a></li>
+    </ul>
+</footer>
+<body>
+    
+</body>
+</html>

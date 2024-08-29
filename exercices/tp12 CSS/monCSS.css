@@ -1,0 +1,14 @@
+p {
+    background-color: rgb(192, 190, 190);
+    border: green solid 3px;
+}
+#a {
+    height: 100px;
+}
+#b {
+    width: 50%;
+}
+#c {
+    height: 200px;
+    width: 200px;
+}

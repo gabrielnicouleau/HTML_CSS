@@ -1,0 +1,95 @@
+<!doctype HTML>
+
+<html lang="fr">
+    <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <form method="POST" action="monProgramme.php">
+            <fieldset>
+                <legend>Info personnelles</legend>
+                <div>
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" name="prenom" placeholder="Ex: Jacques" maxlength="20" minlength="2" id="prenom"/>
+                </div>
+                <div>
+                    <label for="nom">Nom:</label>
+                    <input type="text" name="nom" placeholder="Ex: Dubois" maxlength="20" minlength="2" id="nom"/>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Ex: monMail@FAI.com" id="email"/>
+                </div>
+                <div>
+                    <label for="tel">Numéro</label>
+                    <input type="tel" name="tel" placeholder="Ex: 00.11.22.33.44" id="tel"/>
+                </div>
+                <div>
+                    <label for="pwd">Mot de passe:</label>
+                    <input type="password" name="pwd" placeholder="Ex: P@ssWo4d" maxlength="30" minlength="8" id="pwd"/>
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" placeholder="Ex: 15" id="age"/>
+                </div>
+                <div>
+                    <label for="commentaire">Laissez un commentaire:</label><br/>
+                    <textarea name="commentaire" id="commentaire" rows="10" cols="70" placeholder="J'adore ce que vous faites !"></textarea>
+                </div>
+                <div>
+                    <label for="date">Date de mon commentaire:</label>
+                    <input type="date" name="date" id="date"/>
+                </div>
+                <div>
+                    <label for="photo">Ma photo:</label>
+                    <input type="file" name="photo" id="photo" accept=".png, .jpg, .gif"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Vous préférez:</legend>
+                <div>
+                    <input type="checkbox" id="checkboxHTML" checked/><label for="checkboxHTML">Le HTML</label>
+                    <br/>
+                    <input type="checkbox" id="checkboxCSS"/><label for="checkboxCSS">Le CSS</label>
+                    <br/>
+                    <input type="checkbox" id="checkboxJS"/><label for="checkboxJS">Le JavaScript</label>
+                    <br/>
+                    <input type="checkbox" id="checkboxEMPTY"/><label for="checkboxEMPTY">Ne rien faire</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Vous vous levez:</legend>
+                <div>
+                    <input type="radio" id="radioMatin" name="radio" value="radioMatin" checked/><label for="radioMatin">Le matin</label>
+                    <br/>
+                    <input type="radio" id="radioMidi" name="radio" value="radioMidi"/><label for="radioMidi">Le midi</label>
+                    <br/>
+                    <input type="radio" id="radioSoir" name="radio" value="radioSoir"/><label for="radioSoir">Le soir</label>
+                    <br/>
+                    <input type="radio" id="radioRetard" name="radio" value="radioRetard"/><label for="radioRetard">En retard !</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Fin du formulaire</legend>
+                <div>
+                    <label for="liste">Vous en avez assez ?</label>
+                    <select name="liste" id="liste">
+                        <optgroup label="Team Pas encore">
+                            <option value="jenVeuxPlus">J'en veux plus</option>
+                            <option value="CSuper">C'est super !</option>
+                        </optgroup>
+                        <optgroup label="Team Oula">
+                            <option value="marre">J'en ai marre</option>
+                            <option value="pitie">Pitié !</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Envoyer"/><input type="reset" value="Reset"/>
+                </div>
+        </fieldset> 
+        </form>
+    </body>
+</html>
