@@ -1,0 +1,67 @@
+.dice{
+    border: 2px red solid;
+    border-radius: 25px;
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 1px red solid;
+    background-color: red;
+    border-radius: 10px;
+}
+div {
+    display: flex;
+}/*mettre toutes les div en flexbox*/
+main {
+    flex-direction: column;
+    }/*mettre les dés en colonne*/
+#d1 {
+    justify-content: center;
+    .dot {
+        align-self: center;
+    }
+}/*dans d1, mettre la div au centre et mettre son point au centre*/
+#d2 {
+    justify-content: space-evenly;
+    .dot {
+        align-self: center;
+    }
+}/*dans d2, mettre la div en intervalle régulière et dans cette div, mettre ses .dot au centre*/
+#d3 {
+    justify-content: space-evenly;
+    .dot {
+        align-self: center;
+    }
+}/* dans d3, mettre la div en intervalle régulière et, dans cette div, mettre ses .dot au centre*/
+#d4 {
+    justify-content: space-around;/*dans d4, mettre les div en intervalle régulières doublées*/
+    div {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}/*mettre les div en colone et en intervalle régulière doublée*/
+#d5 {
+    justify-content: space-around;/*dans d5, mettre les div en intervalles doublées*/
+    div {
+        flex-direction: column;
+        justify-content: space-around;
+    }/*mettre les div en colone et en intervalle régulière doublée*/
+    div:nth-child(2) {
+        justify-content: center;
+        .dot {
+            align-self: center;
+        }
+    }/*mettre la deuxième div au centre et son .dot au centre*/
+}
+#d6 {
+    justify-content: space-around;/*dans d6, mettre les div en intervalle doublées*/
+    div {
+        flex-direction: column;
+        justify-content: space-around;
+    }/*mettre les div en colone et intervalle régulière doublée*/
+}

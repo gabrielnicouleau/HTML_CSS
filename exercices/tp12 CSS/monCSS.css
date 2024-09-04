@@ -1,14 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: mediumpurple;
+}
 p {
     background-color: rgb(192, 190, 190);
     border: green solid 3px;
 }
-#a {
+p:first-child {
     height: 100px;
+    padding: 20px;
+    margin: 0;
 }
-#b {
+p:nth-child(2) {
     width: 50%;
+    padding: 1.2em;
+    margin: 20px 5px;
 }
-#c {
+p:last-child {
     height: 200px;
     width: 200px;
+    padding: -30px;
+    margin: auto
 }

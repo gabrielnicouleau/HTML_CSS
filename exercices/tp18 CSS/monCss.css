@@ -1,0 +1,81 @@
+img {
+    width: 300px;
+    height: 300px;
+}
+article {
+    border: black solid 1px;
+    padding: 5px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    img, p {
+        align-self: center;
+    }
+
+}
+body {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 1fr 50px;
+}
+a {
+    border: black solid 1px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+header {
+    grid-column: 1 /span 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    size: 1fr;
+    img {
+        width: 100%;
+    }
+}
+main {
+    grid-column: 1 /span 3;
+    grid-row: 2;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+footer {
+    grid-column: 1 /span 3;
+    grid-row: 3;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+article {
+    margin: 10px;
+}
+@media only screen and (max-width: 800px){
+    body {
+        grid-template-columns: 1fr;
+    }
+    main {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        img {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 360px){
+    header {
+        img {
+            width: 100%;
+        }
+    }
+}
+/*regarder correction exercice, myens plus simples d'y parvenir en flex avec un seul @media en ajoutant bien les bonnes valeur d'unités*/

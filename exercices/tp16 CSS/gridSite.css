@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}/*mise par défault du margin et padding à zéro*/
+header {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,1fr);
+}/*création d'un grid de 12 colones sur 2 lignes pour le header (3 placements principal en colonne avec 4 sous-placement à l'intérieur pour otimiser le placement du nav)*/
+h1 {
+    grid-column: 6 /span 4;
+    grid-row: 1;
+    justify-items: center;
+}/*placement du titre au centre (selon model)*/
+ul {
+    grid-row: 2;
+    grid-column: 6 /span 3;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+}/* placement du nav au centre (selon model)*/
+main {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr; /*création d'un grid dans le main de 4 colones sur 1 ligne*/
+    div:nth-child(1) {
+        grid-column: 1 ;
+    }/*dans le grid main, la 1ere div prend la 1ere colone*/
+    div:nth-child(2) {
+        grid-column: 2 /span 2;
+    }/*dans le grid main, la 2eme div prend la 2eme et 3eme colone*/
+    div:nth-child(3) {
+        grid-column: 4
+    }/*dans le grid main, la 3eme div prend la 4eme colone*/
+}

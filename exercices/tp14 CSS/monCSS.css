@@ -1,0 +1,40 @@
+body {
+    margin: 20px;
+    padding: 0;
+    position: absolute;
+}/*mise des valeurs du padding et du margin par défault à zéro*/
+form {
+    width: 400px;
+    height: 250px;
+    border: black solid 1px;
+    background-color: rgb(224, 224, 224);
+}/*formulaire en 400px de large par 250px de haut avec une bordure noire et mise en couleur grise du fond*/
+h1 {
+    text-align: center;
+}/*alignement au centre du titre*/
+.bouton {
+    text-align: center;
+    margin: 20px;
+}/*alignement au centre de la div class=bouton et marge extérieur de 20px*/
+input[type="submit"], input[type="reset"] {
+    padding: 5px;
+    margin: 10px;
+}/*padding des boutons de 5px et 10px de marge entre les deux boutons*/
+input[type="checkbox"]+label {
+    padding-left: 10px;
+}/*padding de gauche entre le label et la checkbox de 10px*/
+.pseudo, .mdp, .checkbox {
+    padding-left: 30px;
+}/*padding de gauche de div "pseudo", "mdp" et "checkbox" de 30px*/
+input[type="text"], input[type="password"] {
+    margin-left: 20px;
+}/*marging de gauche des input "text" et "passeword" de 20px*/
+input[type="submit"]:hover, input[type="reset"]:hover {
+    color: grey;
+    background-color: black;
+}/*inversement des couleurs au passage de la souris sur les deux boutons*/
+form div {
+    margin-bottom: 10px;
+}/*marge du bas de 10px entre les différentes div*/
+
+/*!!!On peux passer par le parent pour atteindre l'enfant grace à :nth-child() pour éviter de créer des class et id à outrance!!!*/
