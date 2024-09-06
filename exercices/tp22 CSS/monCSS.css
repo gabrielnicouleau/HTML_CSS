@@ -1,0 +1,85 @@
+h1 {
+    color: red;
+    transition: 1s linear color;
+    animation: titre 2s linear;
+}
+h1:hover {
+    color:green;
+}
+p {
+    width: 500px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    animation: paragraphe 1s linear;
+}
+p:active {
+    transform: rotate(2turn);
+}
+img {
+    margin-left: 100px;
+    margin-top: 100px;
+    transition-duration: 20s;
+    transition-timing-function: ease-in-out;
+}
+img:hover {
+    transform: rotate(100turn);
+}
+article {
+    transition-duration: 17s;
+    transition-timing-function: ease-in;
+    transition-delay: 3s;
+}
+article:hover {
+    transform: translateX(2000px);
+}
+@keyframes titre {
+    from {
+        transform: translateX(-200px) translateY(-200px);
+    }
+    to {
+        transform: translateX(0) translateY(0);
+    }
+}
+@keyframes paragraphe {
+    from {
+        width: 0%;
+        height: 0%;
+    }
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes bouton1 {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transition: rotate(-10deg);
+    }
+}
+@keyframes bouton2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes bouton3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+input:nth-child(1):hover {
+    animation: bouton1 0.5s infinite alternate;
+}
+input:nth-child(2):hover {
+    animation: bouton2 0.2s infinite alternate;
+}
+input:nth-child(3):hover {
+    animation: bouton3 0.5s infinite alternate;
+}
